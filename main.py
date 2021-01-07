@@ -1,15 +1,17 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pandas as pd
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
+def getStockCode(market):
+    if market == 'kosdaq':
+        url_market = 'kosdaqMkt'
+    elif market == 'kospi':
+        url_market = 'stockMkt'
+    else:
+        print('invalid market ')
+        return
+    url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13&marketType=%s' % url_market
+    df = pd.read_html(url, header=0)[0]
+    return df
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
+    result_df = getStockCode('kosdaq')
+    print(result_df)
