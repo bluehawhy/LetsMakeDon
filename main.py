@@ -1,17 +1,10 @@
-import pandas as pd
+
+#from ._app import databaseHandler
+from _app import test
 
 
-def getStockCode(market):
-    if market == 'kosdaq':
-        url_market = 'kosdaqMkt'
-    elif market == 'kospi':
-        url_market = 'stockMkt'
-    else:
-        print('invalid market ')
-        return
-    url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13&marketType=%s' % url_market
-    df = pd.read_html(url, header=0)[0]
-    return df
-if __name__ == '__main__':
-    result_df = getStockCode('kosdaq')
-    print(result_df)
+
+print('직각삼각형 그리기\n')
+leg = int(input('변의 길이: '))
+
+print(leg)

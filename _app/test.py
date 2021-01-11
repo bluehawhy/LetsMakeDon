@@ -1,12 +1,34 @@
+import os
+import pathlib
+
 import pandas as pd
+
 import requests
 import bs4 as bs
 
-url = "http://kind.krx.co.kr/corpgeneral/corpList.do?method=download"
-df = pd.read_html("http://kind.krx.co.kr/corpgeneral/corpList.do?method=download", header=0)
 
-print(df.values)
-# print(df[0])
+import databaseHandler as dh
+
+
+df_filename = 'abc.db'
+db_fullname = os.path.join(pathlib.Path(__file__).parent.absolute().parent,'_db',df_filename)
+
+dh.syncDBandDataframe(db_fullname,'aa')
+
+
+
+def __init__(self):
+    print ('someone called test.py')
+url = "http://kind.krx.co.kr/corpgeneral/corpList.do?method=download"
+df = pd.read_html("http://kind.krx.co.kr/corpgeneral/corpList.do?method=download", header=0)[0]
+
+#print(type(df))
+#print(df[0])
+#print(df[0])
+#print(type(df[0]))
+#print(df['종목코드'].values.tolist())
+#for i in df:
+#    print(i)
 
 # f = i["종목코드"].astype("int64", copy=False)
 # print("{:06d}".format(f))
