@@ -6,22 +6,28 @@ import pandas as pd
 import requests
 import bs4 as bs
 
+from sqlalchemy import create_engine
+
 
 import databaseHandler as dh
-
-
-df_filename = 'abc.db'
-db_fullname = os.path.join(pathlib.Path(__file__).parent.absolute().parent,'_db',df_filename)
-
-dh.syncDBandDataframe(db_fullname,'aa')
 
 
 
 def __init__(self):
     print ('someone called test.py')
+    
+    
+#df_filename = 'abc.db'
+#db_fullname = os.path.join(pathlib.Path(__file__).parent.absolute().parent,'_db',df_filename)
+
+#dh.syncDBandDataframe(db_fullname,'aa','ss')
+
+
+
 url = "http://kind.krx.co.kr/corpgeneral/corpList.do?method=download"
 df = pd.read_html("http://kind.krx.co.kr/corpgeneral/corpList.do?method=download", header=0)[0]
-
+engine = create_engine("sqlite:///example.db")
+df.to_sql('test', con=engine, if_exists='append')
 #print(type(df))
 #print(df[0])
 #print(df[0])
@@ -34,10 +40,10 @@ df = pd.read_html("http://kind.krx.co.kr/corpgeneral/corpList.do?method=download
 # print("{:06d}".format(f))
 
 
-base_url = "https://finance.naver.com/item/sise_day.nhn?code=005930&page="
-base_url = "https://finance.naver.com/item/sise_day.nhn?code=005560&page="
-base_url = "https://finance.naver.com/item/sise_day.nhn?code=005560&page="
-base_url = "https://finance.naver.com/item/sise_day.nhn?code=114140&page="
+#base_url = "https://finance.naver.com/item/sise_day.nhn?code=005930&page="
+#base_url = "https://finance.naver.com/item/sise_day.nhn?code=005560&page="
+#base_url = "https://finance.naver.com/item/sise_day.nhn?code=005560&page="
+#base_url = "https://finance.naver.com/item/sise_day.nhn?code=114140&page="
 
 
 # res = requests.get(base_url)
