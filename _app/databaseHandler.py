@@ -3,14 +3,12 @@ from sqlalchemy import create_engine
 import sqlite3
 
 
-def syncDBandDataframe(dbfile,dataframe):
+def syncDBandDataframe(dbfile,table,dataframe):
     conn = sqlite3.connect(dbfile)
     c = conn.cursor()
-    #c.execute('''DROP TABLE IF EXISTS person_age;''')
-    #c.execute('''
-    #          CREATE TABLE person_age
-    #          (id INTEGER PRIMARY KEY ASC, age INTEGER NOT NULL)
-    #          ''')
+    query = 'CREATE TABLE IF NOT EXISTS %s (id INTEGER PRIMARY KEY ASC, age INTEGER NOT NULL)' %table
+    print(query)
+    c.execute(query)
     conn.commit()
     conn.close()
 
