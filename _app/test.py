@@ -13,9 +13,13 @@ import databaseHandler as dh
 
 
 
-def __init__(self):
+def __init__():
     print ('someone called test.py')
     
+
+def syncpdtodb():
+    a= 0
+    return 0
     
 #df_filename = 'abc.db'
 #db_fullname = os.path.join(pathlib.Path(__file__).parent.absolute().parent,'_db',df_filename)
