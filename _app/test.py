@@ -9,29 +9,26 @@ import bs4 as bs
 from sqlalchemy import create_engine
 
 
-import databaseHandler as dh
+from . import databaseHandler as dh
 
 
 
-def __init__():
-    print ('someone called test.py')
-    
-
-def syncpdtodb():
-    a= 0
-    return 0
-    
 #df_filename = 'abc.db'
 #db_fullname = os.path.join(pathlib.Path(__file__).parent.absolute().parent,'_db',df_filename)
+
+
+def syncpdtodb():
+    url = "http://kind.krx.co.kr/corpgeneral/corpList.do?method=download"
+    df = pd.read_html("http://kind.krx.co.kr/corpgeneral/corpList.do?method=download", header=0)[0]
+    engine = create_engine("sqlite:..///example.db")
+    df.to_sql('test', con=engine, if_exists='append')
+    return 0
+    
 
 #dh.syncDBandDataframe(db_fullname,'aa','ss')
 
 
 
-url = "http://kind.krx.co.kr/corpgeneral/corpList.do?method=download"
-df = pd.read_html("http://kind.krx.co.kr/corpgeneral/corpList.do?method=download", header=0)[0]
-engine = create_engine("sqlite:///example.db")
-df.to_sql('test', con=engine, if_exists='append')
 #print(type(df))
 #print(df[0])
 #print(df[0])
