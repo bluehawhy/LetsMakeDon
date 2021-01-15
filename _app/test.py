@@ -1,20 +1,23 @@
-import os
-import pathlib
-
 import pandas as pd
-
 import requests
 import bs4 as bs
-
 from sqlalchemy import create_engine
 
 
-from . import databaseHandler as dh
+import os, sys, pathlib
+#refer to path from 
+sys.path.append(str(pathlib.Path(__file__).parent.absolute()).split('/_app')[0])
+
+
+
+#from . import databaseHandler as dh
 
 
 
 #df_filename = 'abc.db'
-#db_fullname = os.path.join(pathlib.Path(__file__).parent.absolute().parent,'_db',df_filename)
+main_path =  str(pathlib.Path(__file__).parent.absolute()).split('/_app')[0]
+db_path = os.path.join(str(pathlib.Path(__file__).parent.absolute()).split('/_app')[0],'_db')
+print(db_path)
 
 
 def syncpdtodb():
