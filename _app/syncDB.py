@@ -18,4 +18,13 @@ def syncpdtodb():
     df.to_sql('stocklist', con=engine, if_exists='replace',index_label='index')
     return 0
 
+
+def getStockPrice (Stocks):
+    engine = create_engine("sqlite:///%s/stockList.db" %db_path)
+    df = pd.DataFrame({'name' : ['User 6', 'User 7']})
+    df.to_sql('StockPrice', con=engine, if_exists='replace',index_label='index')
+    return 0
+
+
 syncpdtodb()
+#getClosingPrice('abc')

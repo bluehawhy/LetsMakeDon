@@ -1,0 +1,234 @@
+<html lang="ko">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>네이버 금융</title>
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/newstock.css" rel="stylesheet" type="text/css"/> 
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/common.css" rel="stylesheet" type="text/css"/>   
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/layout.css" rel="stylesheet" type="text/css"/>   
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/main.css" rel="stylesheet" type="text/css"/>     
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/newstock2.css" rel="stylesheet" type="text/css"/>
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/newstock3.css" rel="stylesheet" type="text/css"/>
+<link href="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/css/world.css" rel="stylesheet" type="text/css"/>    
+</head>
+<body>
+<script language="JavaScript">
+function mouseOver(obj){
+  obj.style.backgroundColor="#f6f4e5";
+}
+function mouseOut(obj){
+  obj.style.backgroundColor="#ffffff";
+}
+</script>
+<h4 class="tlline2"><strong><span class="red03">일별</span>시세</strong></h4>
+<table cellspacing="0" class="type2">
+<tr>
+<th>날짜</th>
+<th>종가</th>
+<th>전일비</th>
+<th>시가</th>
+<th>고가</th>
+<th>저가</th>
+<th>거래량</th>
+</tr>
+<tr>
+<td colspan="7" height="8"></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.15</span></td>
+<td class="num"><span class="tah p11">88,000</span></td>
+<td class="num">
+<img alt="하락" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" style="margin-right:4px;" width="7"/><span class="tah p11 nv01">
+                                1,700
+                                </span>
+</td>
+<td class="num"><span class="tah p11">89,800</span></td>
+<td class="num"><span class="tah p11">91,800</span></td>
+<td class="num"><span class="tah p11">88,000</span></td>
+<td class="num"><span class="tah p11">33,117,980</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.14</span></td>
+<td class="num"><span class="tah p11">89,700</span></td>
+<td class="num">
+<span class="tah p11">0</span>
+</td>
+<td class="num"><span class="tah p11">88,700</span></td>
+<td class="num"><span class="tah p11">90,000</span></td>
+<td class="num"><span class="tah p11">88,700</span></td>
+<td class="num"><span class="tah p11">26,393,970</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.13</span></td>
+<td class="num"><span class="tah p11">89,700</span></td>
+<td class="num">
+<img alt="하락" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" style="margin-right:4px;" width="7"/><span class="tah p11 nv01">
+                                900
+                                </span>
+</td>
+<td class="num"><span class="tah p11">89,800</span></td>
+<td class="num"><span class="tah p11">91,200</span></td>
+<td class="num"><span class="tah p11">89,100</span></td>
+<td class="num"><span class="tah p11">36,068,848</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.12</span></td>
+<td class="num"><span class="tah p11">90,600</span></td>
+<td class="num">
+<img alt="하락" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" style="margin-right:4px;" width="7"/><span class="tah p11 nv01">
+                                400
+                                </span>
+</td>
+<td class="num"><span class="tah p11">90,300</span></td>
+<td class="num"><span class="tah p11">91,400</span></td>
+<td class="num"><span class="tah p11">87,800</span></td>
+<td class="num"><span class="tah p11">48,682,416</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.11</span></td>
+<td class="num"><span class="tah p11">91,000</span></td>
+<td class="num">
+<img alt="상승" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" style="margin-right:4px;" width="7"/><span class="tah p11 red02">
+                                2,200
+                                </span>
+</td>
+<td class="num"><span class="tah p11">90,000</span></td>
+<td class="num"><span class="tah p11">96,800</span></td>
+<td class="num"><span class="tah p11">89,500</span></td>
+<td class="num"><span class="tah p11">90,306,177</span></td>
+</tr>
+<tr>
+<td colspan="7" height="8"></td>
+</tr>
+<tr>
+<td bgcolor="#e1e1e1" colspan="7" height="1"></td>
+</tr>
+<tr>
+<td colspan="7" height="8"></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.08</span></td>
+<td class="num"><span class="tah p11">88,800</span></td>
+<td class="num">
+<img alt="상승" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" style="margin-right:4px;" width="7"/><span class="tah p11 red02">
+                                5,900
+                                </span>
+</td>
+<td class="num"><span class="tah p11">83,300</span></td>
+<td class="num"><span class="tah p11">90,000</span></td>
+<td class="num"><span class="tah p11">83,000</span></td>
+<td class="num"><span class="tah p11">59,013,307</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.07</span></td>
+<td class="num"><span class="tah p11">82,900</span></td>
+<td class="num">
+<img alt="상승" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" style="margin-right:4px;" width="7"/><span class="tah p11 red02">
+                                700
+                                </span>
+</td>
+<td class="num"><span class="tah p11">82,800</span></td>
+<td class="num"><span class="tah p11">84,200</span></td>
+<td class="num"><span class="tah p11">82,700</span></td>
+<td class="num"><span class="tah p11">32,644,642</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.06</span></td>
+<td class="num"><span class="tah p11">82,200</span></td>
+<td class="num">
+<img alt="하락" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" style="margin-right:4px;" width="7"/><span class="tah p11 nv01">
+                                1,700
+                                </span>
+</td>
+<td class="num"><span class="tah p11">83,300</span></td>
+<td class="num"><span class="tah p11">84,500</span></td>
+<td class="num"><span class="tah p11">82,100</span></td>
+<td class="num"><span class="tah p11">42,089,013</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.05</span></td>
+<td class="num"><span class="tah p11">83,900</span></td>
+<td class="num">
+<img alt="상승" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" style="margin-right:4px;" width="7"/><span class="tah p11 red02">
+                                900
+                                </span>
+</td>
+<td class="num"><span class="tah p11">81,600</span></td>
+<td class="num"><span class="tah p11">83,900</span></td>
+<td class="num"><span class="tah p11">81,600</span></td>
+<td class="num"><span class="tah p11">35,335,669</span></td>
+</tr>
+<tr onmouseout="mouseOut(this)" onmouseover="mouseOver(this)">
+<td align="center"><span class="tah p10 gray03">2021.01.04</span></td>
+<td class="num"><span class="tah p11">83,000</span></td>
+<td class="num">
+<img alt="상승" height="6" src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" style="margin-right:4px;" width="7"/><span class="tah p11 red02">
+                                2,000
+                                </span>
+</td>
+<td class="num"><span class="tah p11">81,000</span></td>
+<td class="num"><span class="tah p11">84,400</span></td>
+<td class="num"><span class="tah p11">80,200</span></td>
+<td class="num"><span class="tah p11">38,655,276</span></td>
+</tr>
+<tr>
+<td colspan="7" height="8"></td>
+</tr>
+</table>
+<!--- 페이지 네비게이션 시작--->
+<table align="center" class="Nnavi" summary="페이지 네비게이션 리스트">
+<caption>페이지 네비게이션</caption>
+<tr>
+<td class="on">
+<a href="/item/sise_day.nhn?code=005930&amp;page=1">1</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=2">2</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=3">3</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=4">4</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=5">5</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=6">6</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=7">7</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=8">8</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=9">9</a>
+</td>
+<td>
+<a href="/item/sise_day.nhn?code=005930&amp;page=10">10</a>
+</td>
+<td class="pgR">
+<a href="/item/sise_day.nhn?code=005930&amp;page=11">
+                                다음<img alt="" border="0" height="5" src="https://ssl.pstatic.net/static/n/cmn/bu_pgarR.gif" width="3"/>
+</a>
+</td>
+<td class="pgRR">
+<a href="/item/sise_day.nhn?code=005930&amp;page=618">맨뒤
+                                <img alt="" border="0" height="5" src="https://ssl.pstatic.net/static/n/cmn/bu_pgarRR.gif" width="8"/>
+</a>
+</td>
+</tr>
+</table>
+<!--- 페이지 네비게이션 끝--->
+<script src="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/js/jindo.min.ns.1.5.3.euckr.js" type="text/javascript"></script>
+<script src="https://ssl.pstatic.net/imgstock/static.pc/20210115182045/js/lcslog.js" type="text/javascript"></script>
+<script type="text/javascript">
+        ;(function(){
+            var eventType = "onpageshow" in window ? "pageshow" : "load";
+            jindo.$Fn(function(){
+                lcs_do();
+            }).attach(window, eventType);
+        })();
+        </script>
+</body></html>
