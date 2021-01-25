@@ -5,27 +5,21 @@ import os, sys, pathlib
 #refer to path from 
 sys.path.append(str(pathlib.Path(__file__).parent.absolute()).split('_app')[0])
 
-
-
 db_path = os.path.join(str(pathlib.Path(__file__).parent.absolute()).split('_app')[0],'_db')
 
-#engine = create_engine("sqlite:///%s/stockList.db" %db_path)
-#with engine.connect() as connection:
-#    result = connection.execute("select 종목코드 from stocklist")
-#    for row in result:
-#        print('{:0>6}'.format(str(row[0])))
+def getQuery(db,query):
+    engine = create_engine("sqlite:///%s/%s" %(db_path,db))
+    with engine.connect() as connection:
+        result = connection.execute(query)
+        for row in result:
+            print('{:0>6}'.format(str(row[0])))
+    return result
 
+db = 'stockList.db'
+query = "select * from stocklist"
+a = getQuery(db,query)
+print(a)
 
-
-# def getStockPrice(code,date):
-# 1. 종목 1페이지 로드, 마지막 페이지 
-# 
-# 
-# a
-# 
-# 
-# 
-# 
 import requests
 from bs4 import BeautifulSoup
 
@@ -91,4 +85,4 @@ def print_stock_price(code, page_num):
         #print(result[0][i], result[1][i], result[2][i]+result[3][i], result[4][i], result[5][i], result[6][i], result[7][i])
         a=0
 
-print_stock_price(code='005930', page_num=1)
+#print_stock_price(code='005930', page_num=1)
