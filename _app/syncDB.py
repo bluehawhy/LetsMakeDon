@@ -26,5 +26,5 @@ def getStockPrice (Stocks):
     return 0
 
 
-#syncpdtodb()
-getClosingPrice('abc')
+syncpdtodb()
+#getClosingPrice('abc')
